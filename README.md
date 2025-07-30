@@ -77,7 +77,7 @@ ORDER BY a.appointment_date DESC;
 
 
 ### Patient Visit Count
-```sql
+
 SELECT 
   p.name AS patient_name,
   COUNT(a.appointment_id) AS total_visits
