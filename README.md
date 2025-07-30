@@ -47,7 +47,7 @@ ehr-database-system/
 
 ---
 
-## 🧪 How to Run
+##  How to Run
 
 1. Open **pgAdmin** or any PostgreSQL client
 2. Run the files in the following order:
@@ -60,9 +60,9 @@ ehr-database-system/
 
 ---
 
-## 🔍 Sample Queries
+##  Sample Queries
 
-### 👨‍⚕️ Appointment Summary
+###  Appointment Summary
 ```sql
 SELECT 
   a.appointment_id,
@@ -76,6 +76,8 @@ JOIN Doctors d ON a.doctor_id = d.doctor_id
 ORDER BY a.appointment_date DESC;
 
 
+### Patient Visit Count
+```sql
 SELECT 
   p.name AS patient_name,
   COUNT(a.appointment_id) AS total_visits
